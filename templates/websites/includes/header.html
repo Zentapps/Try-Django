@@ -1,0 +1,23 @@
+<header>
+    <ul>
+        {% if not request.user.is_authenticated %}
+        <li>
+            <a href="{% url 'websites:login' %}">Login</a>
+        </li>
+        <li>
+            <a href="{% url 'websites:register' %}">Register</a>
+        </li>
+        {% else %}
+        <li>
+            <a href="{% url 'websites:profile' %}">Profile</a>
+        </li>
+        <li>
+            <a href="{% url 'posts:create_post' %}">Create post</a>
+        </li>
+        <li>
+            <a href="{% url 'websites:logout' %}">Logout</a>
+        </li>
+        {% endif %}
+
+    </ul>
+</header>

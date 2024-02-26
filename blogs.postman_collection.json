@@ -1,0 +1,222 @@
+{
+	"info": {
+		"_postman_id": "e965c2aa-5f30-4e46-a9b9-5c910e97a2f6",
+		"name": "blogs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16991270"
+	},
+	"item": [
+		{
+			"name": "localhost:8000/api/v1/auth/login/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "admin1",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/auth/login/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/v1/auth/register/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "shibilpk3",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "ummar123",
+							"type": "text"
+						},
+						{
+							"key": "password2",
+							"value": "ummar123",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/auth/register/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/v1/auth/posts/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI1NTMwOTQzLCJqdGkiOiIzZmMxZWIwNTNiOTY0MmExOWJhMmVmZjE4Y2E0ZjE1OCIsInVzZXJfaWQiOjV9.avZ71wbzhmEyd0YOJE8PibqmKdwhf74nrorL6HFeB5U",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "sdfdf",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "dffsf",
+							"type": "text"
+						},
+						{
+							"key": "publication_date",
+							"value": "2023-12-12",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/Users/shibil/Documents/Frame 4474.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/auth/posts/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"posts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/v1/auth/posts/7907100a-e320-4b95-afe1-3d8eae45d9e2/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI1NTMzNzIzLCJqdGkiOiJmYWVjYzYwMjQ1OTk0YmRmYmUzN2ExMmJmNzJlMzViNiIsInVzZXJfaWQiOjN9.0AsMcVAI1gDZ3QzvPyE20aLEU8dGKcErxZB4D8I1hAs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "sdfdf",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "dffsf",
+							"type": "text"
+						},
+						{
+							"key": "publication_date",
+							"value": "2023-12-12",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/Users/shibil/Documents/Frame 4474.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/auth/posts/7907100a-e320-4b95-afe1-3d8eae45d9e2/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"posts",
+						"7907100a-e320-4b95-afe1-3d8eae45d9e2",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
